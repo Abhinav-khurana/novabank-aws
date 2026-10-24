@@ -1,0 +1,48 @@
+NOVABANK: COMPLETE PROJECT
+
+This ZIP includes the finished frontend, Python backend, local database
+initialization, AWS deployment files, source code, tests, and documentation.
+No npm install, npm build, or pip install is required to run the app locally.
+Python 3.10 or newer is required.
+
+1. Stop the OLD Python server with Ctrl+C in its terminal.
+2. Extract this entire ZIP into a NEW folder. Do not mix frontend folders
+   from previous downloads with this release.
+3. Open a terminal in the extracted banking-system folder.
+4. Run:
+
+   python backend/local.py --seed
+
+   On systems using python3 instead:
+
+   python3 backend/local.py --seed
+
+5. Open http://localhost:8000 and press Ctrl+F5.
+6. Select Aarav, Meera, or Admin and click Sign in.
+
+Local password: DemoBank2026!
+
+Leave the terminal open while using the website.
+If port 8000 is occupied, stop the old server or run:
+
+   python backend/local.py --seed --port 8001
+
+Then open http://localhost:8001 instead.
+
+The terminal prints the exact frontend folder being served.
+The local health check is http://localhost:8000/api/health.
+It should show status: ok.
+
+The stylesheet is frontend/dist/assets/style.css.
+The browser code is frontend/dist/assets/app.js.
+The page references both files directly. All three are already included.
+
+NEW LOCAL DATABASE
+The first run creates banking.db beside this file and seeds demo accounts.
+Your old demo data is not included in this release. If you want to keep it,
+stop the old server and copy YOUR old banking.db into the new project folder
+before the first run. Existing account passwords remain unchanged.
+
+AWS
+Local operation is ready. Live AWS deployment is still pending.
+Read docs/AWS_SETUP.md when ready to deploy using your Free account plan.

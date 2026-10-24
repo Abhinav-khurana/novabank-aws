@@ -1,0 +1,17 @@
+node_modules/
+__pycache__/
+*.pyc
+*.db
+*.db-journal
+.env
+deployment.json
+demo-credentials.txt
+.DS_Store
+
+.env.*
+*.pem
+*.key
+*.db-wal
+*.db-shm
+.aws/
+backend-api.zip
